@@ -1,20 +1,20 @@
 const express = require("express");
 
-const { ItemController } = require("./controllers");
 const { ProjectController } = require("./controllers");
+const { TechController } = require("./controllers");
 
 const router = express.Router();
-
-router.get("/items", ItemController.browse);
-router.get("/items/:id", ItemController.read);
-router.put("/items/:id", ItemController.edit);
-router.post("/items", ItemController.add);
-router.delete("/items/:id", ItemController.delete);
 
 router.get("/project", ProjectController.browse);
 router.get("/project/:id", ProjectController.read);
 router.put("/project/:id", ProjectController.edit);
 router.post("/project", ProjectController.add);
 router.delete("/project/:id", ProjectController.delete);
+
+router.get("/tech", TechController.browse);
+router.get("/tech/:id", TechController.read);
+router.put("/tech/:id", TechController.edit);
+router.post("/tech", TechController.add);
+router.delete("/tech/:id", TechController.delete);
 
 module.exports = router;
