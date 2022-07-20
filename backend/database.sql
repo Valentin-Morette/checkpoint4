@@ -70,14 +70,14 @@ ALTER TABLE `project`
 
 CREATE TABLE `tech` (
   `id` int(11) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL
+  `techno` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `tech`
 --
 
-INSERT INTO `tech` (`id`, `name`) VALUES
+INSERT INTO `tech` (`id`, `techno`) VALUES
 (1, 'Git'),
 (2, 'Github'),
 (3, 'HTML'),
@@ -93,6 +93,8 @@ INSERT INTO `tech` (`id`, `name`) VALUES
 --
 -- Index pour les tables exportées
 --
+
+-- SELECT p.id, p.name, t.name FROM project p JOIN project_tech AS pt ON p.id = pt.project_id JOIN tech AS t ON t.id = pt.tech_id; WHERE t.id = 1 OR t.id = 2 OR t.id = 3 OR t.id = 4 OR t.id = 5 OR t.id = 6 OR t.id = 7 OR t.id = 8 OR t.id = 9 OR t.id = 10 OR t.id = 11;
 
 --
 -- Index pour la table `tech`

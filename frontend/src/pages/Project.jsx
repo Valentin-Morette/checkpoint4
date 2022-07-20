@@ -15,10 +15,10 @@ export default function Project() {
   }, []);
 
   return (
-    <div>
+    <div className="allCardProject grid py-8 px-4 gap-8">
       {allProjects &&
         allProjects.map((project) => (
-          <div>
+          <div className="border-2">
             <a href={project.link} target="_blank" rel="noreferrer">
               <div>
                 <img src={project.img} alt={project.name} />

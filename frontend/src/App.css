@@ -8,3 +8,7 @@ body {
   background-color: #292a2d;
   color: #a9a9b3;
 }
+
+.allCardProject {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
