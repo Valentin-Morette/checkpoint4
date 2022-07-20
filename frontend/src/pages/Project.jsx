@@ -14,5 +14,22 @@ export default function Project() {
     getAllProjects();
   }, []);
 
-  return allProjects && console.warn(allProjects);
+  return (
+    <div>
+      {allProjects &&
+        allProjects.map((project) => (
+          <div>
+            <a href={project.link} target="_blank" rel="noreferrer">
+              <div>
+                <img src={project.img} alt={project.name} />
+                <div>
+                  <h2>{project.name}</h2>
+                  <p>{project.description}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        ))}
+    </div>
+  );
 }
