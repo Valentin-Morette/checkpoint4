@@ -8,7 +8,7 @@ import pp from "../assets/img/pp.png";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center flex-col min-h-[94vh] gap-2 lg/">
+    <div className="flex items-center md:justify-center mt-40 md:mt-0 flex-col min-h-[94vh] gap-2 lg/">
       <img
         className="rounded-full w-32 border-2 border-regal-white"
         src={pp}

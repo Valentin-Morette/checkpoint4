@@ -19,6 +19,7 @@ router.post("/tech", TechController.add);
 router.delete("/tech/:id", TechController.delete);
 
 router.get("/project_tech", ProjectTechController.browse);
+router.get("/project_tech/:id", ProjectTechController.read);
 router.post("/projec_tech", ProjectTechController.add);
 
 module.exports = router;

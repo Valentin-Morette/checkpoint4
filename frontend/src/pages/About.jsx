@@ -16,7 +16,12 @@ export default function About() {
           recusandae temporibus omnis impedit dolores! Molestias, recusandae.
         </p>
       </div>
-      <div className="div-about">
+      <div className="div-about md:flex-row-reverse">
+        <img
+          className="img-about"
+          src="https://loremflickr.com/320/240/dog?lock=5"
+          alt="Trombi"
+        />
         <p className="w-full mx-8 md:max-w-[50%]">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
           dolorem sequi quo maxime modi, nemo distinctio itaque accusantium
@@ -24,11 +29,6 @@ export default function About() {
           omnis impedit dolores! Molestias, recusandae. reprehenderit tempora
           recusandae temporibus omnis impedit dolores! Molestias, recusandae.
         </p>
-        <img
-          className="img-about"
-          src="https://loremflickr.com/320/240/dog?lock=5"
-          alt="Trombi"
-        />
       </div>
       <div className="div-about">
         <img
