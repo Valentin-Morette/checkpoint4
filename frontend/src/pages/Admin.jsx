@@ -21,7 +21,7 @@ export default function Admin() {
         Link : <input type="text" name="link" id="link" />
       </label>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Envoyer</button>
     </form>
   );
 }
