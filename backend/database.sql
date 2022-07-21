@@ -40,8 +40,8 @@ CREATE TABLE `project` (
 --
 
 INSERT INTO `project` (`id`, `name`, `description`, `date`, `image`, `link`) VALUES
-(1, 'Trombinoscope', 'Premier projet de groupe à la Wild Code School. Trombinoscope de notre promotion', '03/2022', 'trombinoscope.png', 'https://Valentin-Morette.github.io/trombinoscope/'),
-(2, 'Posteries', "Second projet de groupe à la Wild Code School. Jeu faisant appel à l'API 'The Movie Database', qui consiste à deviner le plus rapidement possible le poster d'un film.", '05/2022', 'posteries.png', 'https://github.com/Valentin-Morette/project-2-posteries'),
+(1, 'Trombinoscope', 'Premier projet de groupe à la Wild Code School. Trombinoscope de notre promotion', '03/2022', 'trombi.png', 'https://Valentin-Morette.github.io/trombinoscope/'),
+(2, 'Posteries', "Jeu faisant appel à l'API 'The Movie Database', qui consiste à deviner le plus rapidement possible le poster d'un film.", '05/2022', 'posteries.png', 'https://github.com/Valentin-Morette/project-2-posteries'),
 (3, 'Wild Code Wars', "Page utilisant l'API du jeu d'algorithme Code Wars, regroupe les statistiques de toute la promotion de la Wild Code School sur le jeu.", '05/2022', 'wcw.png', 'https://Valentin-Morette.github.io/wild-code-wars/'),
 (4, 'Mario 64 Soluce', "Site de solution du jeu Mario 64 sous format vidéo. Projet personnel pour m'entraîner avec une base de données.", '06/2022', 'mario.png', 'https://github.com/Valentin-Morette/m64soluce'),
 (5, 'Coockie-Cliker', "Jeu qui reprend le principe du jeu Cookie-Clicker, c'est un terrain de jeu pour m'exercer à React en dehors des exercices des cours.", '04/2022', 'cc.png', 'https://Valentin-Morette.github.io/coockie_cliker/');

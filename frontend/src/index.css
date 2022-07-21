@@ -4,6 +4,10 @@
 
 @layer components {
   .img-about {
-    @apply w-full max-w-[400px] m-8 md:max-w-[40%] lg:max-w-[35%] border-2 border-regal-white rounded-xl;
+    @apply w-full max-w-[400px] m-8 md:max-w-[40%] lg:max-w-[30%] border-2 border-regal-white rounded-xl;
+  }
+
+  .div-about {
+    @apply flex flex-col items-center mx-8 md:gap-12 md:flex-row md:justify-evenly;
   }
 }

@@ -1,7 +1,15 @@
 const AbstractManager = require("./AbstractManager");
+const ProjectManager = require("./ProjectManager");
+const TechManager = require("./TechManager");
 
 class ProjectTechManager extends AbstractManager {
   static table = "project_tech";
+
+  findTech() {
+    return this.connection.query(
+      `SELECT p.id, p.name, t.techno FROM ${ProjectManager.table} p JOIN ${ProjectTechManager.table} AS pt ON p.id = pt.project_id JOIN ${TechManager.table} AS t ON t.id = pt.tech_id;`
+    );
+  }
 
   insert(projectTech) {
     return this.connection.query(
