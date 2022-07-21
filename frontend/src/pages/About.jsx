@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <h1 className="text-center mt-8 text-2xl md:mb-8">A propos de moi</h1>
+      <h1 className="text-center mt-8 text-2xl md:mb-8">À propos de moi</h1>
       <div className="div-about">
         <img
           className="img-about"

@@ -14,6 +14,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Serve the public folder for public resources
 app.use(express.static(path.join(__dirname, "../public")));

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
+import Admin from "./pages/Admin";
 import "./App.css";
 import ProjectDetail from "./pages/ProjectDetail";
 
@@ -16,7 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Project />} />
           <Route path="projects/:id" element={<ProjectDetail />} />
-          <Route path="contact" element={<Home />} />
+          <Route path="admin" element={<Admin />} />
         </Routes>
       </div>
     </Router>

@@ -114,6 +114,8 @@ ALTER TABLE `tech`
 
 -- -----------------------------------------------------------------------------------------
 
+-- DELETE project, project_tech FROM project INNER JOIN project_tech ON project.id = project_tech.project_id WHERE project.id = 1;
+
 --
 -- Structure de la table `project_tech`
 --
@@ -123,7 +125,8 @@ CREATE TABLE `project_tech` (
   `tech_id` int(11) UNSIGNED NOT NULL,
   CONSTRAINT fk_project_tech_project
         FOREIGN KEY (project_id)
-        REFERENCES project(id),
+        REFERENCES project(id)
+        ON DELETE CASCADE,
   CONSTRAINT fk_project_tech_tech
         FOREIGN KEY (tech_id)
         REFERENCES tech(id)

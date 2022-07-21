@@ -6,6 +6,7 @@ export default function ProjectDetail() {
   const { id } = useParams();
   const [project, setProject] = useState([]);
   const [allTech, setAllTech] = useState([]);
+  const [deleteProject, setDeleteProject] = useState(false);
 
   const getProjects = () => {
     axios
@@ -19,6 +20,11 @@ export default function ProjectDetail() {
       .get("http://localhost:5000/project_tech")
       .then((res) => res.data)
       .then((data) => setAllTech(data));
+  };
+
+  const RemoveProject = () => {
+    axios.delete(`http://localhost:5000/project/${id}`).then((res) => res.data);
+    setDeleteProject(true);
   };
 
   useEffect(() => {
@@ -75,6 +81,17 @@ export default function ProjectDetail() {
           </div>
         </>
       )}
+      <button
+        className="bg-[#c41c1c] rounded-xl py-2 px-4 ml-6"
+        type="button"
+        onClick={() => RemoveProject(id)}
+      >
+        {deleteProject ? (
+          <p className="text-white">Projet Supprimé</p>
+        ) : (
+          <p className="text-white">Supprimer le projet</p>
+        )}
+      </button>
     </div>
   );
 }

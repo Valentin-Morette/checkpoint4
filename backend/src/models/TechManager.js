@@ -5,8 +5,8 @@ class TechManager extends AbstractManager {
 
   insert(tech) {
     return this.connection.query(
-      `insert into ${TechManager.table} (name, description, date, image, link) values (?, ?, ?, ?, ?)`,
-      [tech.name, tech.description, tech.date, tech.image, tech.link]
+      `insert into ${TechManager.table} (techno) values (?)`,
+      [tech.techno]
     );
   }
 

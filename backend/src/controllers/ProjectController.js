@@ -53,7 +53,6 @@ class ProjectController {
 
   static add = (req, res) => {
     const project = req.body;
-
     // TODO validations (length, format...)
 
     models.project
